@@ -4,9 +4,9 @@ import { useState } from "react";
 function Colors(){
 
 const colors = [
-    { id: 'blue', name: 'Titanio Azul', image: '../../public/img/iphone-blue.jpg', colorClass: 'bg-blue-500' },
-    { id: 'silver', name: 'Titanio Prata', image: '../../public/img/iphone-silver.jpg', colorClass: 'bg-gray-300' },
-    { id: 'orange', name: 'Titanio Laranja', image: '../../public/img/iphone-orange.jpg', colorClass: 'bg-orange-500' }
+    { id: 'blue', name: 'Titanio Azul', image: '/img/iphone-blue.jpg', colorClass: 'bg-blue-500' },
+    { id: 'silver', name: 'Titanio Prata', image: '/img/iphone-silver.jpg', colorClass: 'bg-gray-300' },
+    { id: 'orange', name: 'Titanio Laranja', image: '/img/iphone-orange.jpg', colorClass: 'bg-orange-500' }
 ];
 
 

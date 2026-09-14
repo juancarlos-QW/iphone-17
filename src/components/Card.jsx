@@ -15,7 +15,7 @@ function Card() {
           <div className="bg-gray-900 rounded-3xl p-8 hover:scale-105 transition-transform duration-300 cursor-pointer">
             <img
               className="w-full rounded-2xl"
-              src="../../public/img/titanium-design.jpg"
+              src="/img/titanium-design.jpg"
               alt="Titanium Design"
             />
             <h3 className="text-2xl font-bold mb-2">Titanium Design</h3>
@@ -26,9 +26,9 @@ function Card() {
           </div>
 
           <div className="bg-gray-900 rounded-3xl p-8 hover:scale-105 transition-transform duration-300 cursor-pointer">
-            <img
+           <img
               className="w-full rounded-2xl"
-              src="../../public/img/ios-features.jpg"
+              src="/img/ios-features.jpg"
               alt="iOS Features"
             />
             <h3 className="text-2xl font-bold mb-2">iOS 28</h3>
@@ -46,7 +46,7 @@ function Card() {
           </p>
           <img
             className="w-full rounded-2xl mb-4"
-            src="../../public/img/chip-a18-pro.jpg"
+            src="/img/chip-a18-pro.jpg"
             alt="A18 Pro"
           />
 
