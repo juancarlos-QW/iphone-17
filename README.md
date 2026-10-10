@@ -1,16 +1,36 @@
-# React + Vite
+# iPhone 17 Pro — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page inspirada na página de produto do iPhone 17 Pro, feita com **React**, **Vite** e **Tailwind CSS**.
 
-Currently, two official plugins are available:
+> Projeto de estudo, sem afiliação com a Apple Inc.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Seções
 
-## React Compiler
+- **NavBar** fixa com menu responsivo
+- **Hero** com imagem em tela cheia
+- **Intro** com destaques do aparelho
+- **Design**, **Performance** e **Câmera**
+- **Cores**: seletor interativo de acabamento e comparação dos modelos
+- **Footer**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias
 
-## Expanding the ESLint configuration
+- [React 19](https://react.dev/)
+- [Vite](https://vite.dev/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [Lucide React](https://lucide.dev/) (ícones)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como rodar
+
+```bash
+npm install
+npm run dev
+```
+
+Outros scripts:
+
+```bash
+npm run build    # gera a versão de produção em dist/
+npm run preview  # serve o build localmente
+npm run lint     # verifica o código com ESLint
+```

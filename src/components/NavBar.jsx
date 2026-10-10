@@ -1,14 +1,15 @@
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
+
+const links = [
+  { href: "#design", label: "Design" },
+  { href: "#performance", label: "Performance" },
+  { href: "#camera", label: "Câmera" },
+  { href: "#cores", label: "Cores" },
+];
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-
-  const links = [
-    { href: "#design", label: "Design" },
-    { href: "#performance", label: "Performance" },
-    { href: "#camera", label: "Camera" },
-    { href: "#cores", label: "Cores" },
-  ];
 
   return (
     <nav className="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50">
@@ -27,29 +28,21 @@ function NavBar() {
         </div>
 
         {/* Botão Comprar - sempre visível */}
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-blue-500/50 cursor-pointer">
+        <a
+          href="#cores"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-blue-500/50 cursor-pointer"
+        >
           Comprar
-        </button>
+        </a>
 
         {/* Botão hambúrguer - visível até lg (mobile/tablet) */}
         <button
-          className="lg:hidden text-white p-2"
+          className="lg:hidden text-white p-2 cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={isOpen}
         >
-          {isOpen ? (
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
-          ) : (
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-          )}
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
