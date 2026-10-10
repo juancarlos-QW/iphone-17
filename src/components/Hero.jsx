@@ -10,7 +10,7 @@ function Hero() {
 
   if (isMobile) {
     return (
-      <Suspense fallback={<section className="h-svh bg-black" />}>
+      <Suspense fallback={<section className="h-svh bg-gray-800" />}>
         <HeroMobile />
       </Suspense>
     );
