@@ -19,7 +19,7 @@ function Design() {
   return (
     <section className="bg-black py-20 px-6 scroll-mt-20" id="design">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-reveal>
           <h2 className="text-5xl font-bold mb-4">Design Revolucionário</h2>
           <p className="text-lg text-gray-400">
             Um design inovador que combina estética e funcionalidade para
@@ -27,7 +27,7 @@ function Design() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8" data-reveal-group>
           {features.map((feature) => (
             <div
               key={feature.title}

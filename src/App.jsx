@@ -6,8 +6,11 @@ import Performance from "./components/Performance"
 import Camera from "./components/Camera"
 import Colors from "./components/Colors"
 import Footer from "./components/Footer"
+import useScrollReveal from "./hooks/useScrollReveal"
 
 function App() {
+  useScrollReveal()
+
   return (
     <div>
       <NavBar />

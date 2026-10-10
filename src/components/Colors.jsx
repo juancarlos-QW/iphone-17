@@ -24,33 +24,36 @@ function Colors() {
   return (
     <section id="cores" className="bg-black py-20 px-8 scroll-mt-20">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-reveal>
           <h2 className="text-5xl md:text-6xl font-bold mb-4">Escolha a Cor</h2>
           <p className="text-gray-400 text-xl">Três acabamentos lindos em titânio</p>
         </div>
 
-        <div className="flex justify-center mb-16">
+        <div className="flex justify-center mb-16" data-reveal>
           <div className="relative w-full max-w-3xl">
             <div className="relative flex items-center justify-center min-h-125">
               <img
+                key={selected.id}
                 src={selected.image}
                 alt={`iPhone 17 Pro na cor ${selected.name}`}
                 width={1728}
                 height={912}
                 loading="lazy"
-                className="max-w-full h-auto max-h-150 mx-auto"
+                className="max-w-full h-auto max-h-150 mx-auto animate-fade-in"
               />
             </div>
 
             <div className="absolute bottom-0 left-0 right-0 text-center">
               <div className="px-8 py-4 rounded-full backdrop-blur-md bg-black/40 inline-block">
-                <h3 className="text-xl font-semibold">{selected.name}</h3>
+                <h3 key={selected.id} className="text-xl font-semibold animate-fade-in">
+                  {selected.name}
+                </h3>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center items-center gap-4">
+        <div className="flex justify-center items-center gap-4" data-reveal-group>
           {colors.map((color) => (
             <button
               key={color.id}
@@ -68,7 +71,7 @@ function Colors() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16" data-reveal-group>
           {models.map((model) => (
             <div key={model.id} className="bg-linear-to-b from-gray-900 to-black rounded-3xl p-8 border border-gray-800">
               <div className="text-3xl mb-4" aria-hidden="true">📱</div>
@@ -84,7 +87,7 @@ function Colors() {
           ))}
         </div>
 
-        <div className="text-center mt-16">
+        <div className="text-center mt-16" data-reveal>
           <button className="bg-blue-800 hover:bg-blue-700 text-white px-8 py-3 mb-4 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-blue-500/50 cursor-pointer">
             Compre agora a partir de {formatBRL(price)}
           </button>

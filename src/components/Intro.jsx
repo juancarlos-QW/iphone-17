@@ -8,7 +8,7 @@ const specs = [
 function Intro() {
   return (
     <section className="bg-black py-20 px-6">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center" data-reveal>
         <h1 className="text-6xl md:text-8xl font-bold mb-6">iPhone 17 Pro</h1>
         <p className="text-2xl md:text-4xl text-gradient font-bold mb-4">
           Titânio. Tão forte. Tão leve. Tão Pro.
@@ -18,7 +18,7 @@ function Intro() {
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-16">
+      <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-16" data-reveal>
         <a
           href="#cores"
           className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-blue-500/50 cursor-pointer"
@@ -33,7 +33,7 @@ function Intro() {
         </a>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mx-auto max-w-5xl">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mx-auto max-w-5xl" data-reveal-group>
         {specs.map((spec) => (
           <div
             key={spec.label}

@@ -20,7 +20,7 @@ function Hero() {
     <section className="relative h-screen overflow-hidden bg-black">
       <div className="absolute top-20 left-0 right-0 bottom-0 z-0">
         <img
-          className="w-full h-full object-cover opacity-90"
+          className="w-full h-full object-cover opacity-90 animate-hero-zoom"
           src="/img/hero.jpg"
           alt="iPhone 17 Pro"
         />

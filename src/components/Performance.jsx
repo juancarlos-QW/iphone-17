@@ -8,7 +8,7 @@ const highlights = [
 function Performance() {
   return (
     <section className="bg-black px-6 pb-20 scroll-mt-20" id="performance">
-      <div className="max-w-7xl mx-auto bg-gray-900 rounded-3xl p-8 md:p-12">
+      <div className="max-w-7xl mx-auto bg-gray-900 rounded-3xl p-8 md:p-12" data-reveal>
         <h2 className="text-4xl font-bold mb-6 text-gradient">A18 Pro</h2>
         <p className="text-gray-400 mb-4">
           O processador A18 Pro oferece desempenho excepcional para as tarefas
@@ -23,7 +23,7 @@ function Performance() {
           loading="lazy"
         />
 
-        <ul className="space-y-3 text-gray-400">
+        <ul className="space-y-3 text-gray-400" data-reveal-group>
           {highlights.map((item) => (
             <li key={item}>{item}</li>
           ))}

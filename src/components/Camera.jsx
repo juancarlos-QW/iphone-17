@@ -23,11 +23,11 @@ function Camera() {
   return (
     <section className="bg-black px-6 pb-20 text-center scroll-mt-20" id="camera">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold mb-6 text-gradient">
+        <h2 className="text-4xl font-bold mb-6 text-gradient" data-reveal>
           Sistema de câmera avançado
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8" data-reveal-group>
           {cameras.map((camera) => (
             <div
               key={camera.name}
